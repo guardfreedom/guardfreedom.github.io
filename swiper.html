@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+            height: 1540px;
+        }
+        .swiper-container {
+            position: relative;
+            top: 100px;
+        }
+
+        .swiper-container1 {
+            width: 100%;
+            height: 420px;
+            margin-bottom: 10px;
+
+        }
+
+        .swiper-container2 {
+            width: 100%;
+            height: 420px;
+            margin-bottom: 10px;
+        }
+
+        .swiper-container3 {
+            width: 100%;
+            height: 420px;
+        }
+
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .bg-img {
+            width: 100%;
+            height: 420px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .img1 {
+            background-image: url('img/00-5.jpg')
+        }
+
+        .img2 {
+            background-image: url('img/01-1.jpg')
+        }
+
+        .img3 {
+            background-image: url('img/02-1.jpg')
+        }
+
+        .img4 {
+            background-image: url('img/03-3.jpg')
+        }
+        .img5 {
+            background-image: url('img/04-1.jpg')
+        }
+        .img6 {
+            background-image: url('img/05-1.jpg')
+        }
+        .img7 {
+            background-image: url('img/06-2.jpg')
+        }
+        .img8 {
+            background-image: url('img/07-2.jpg')
+        }
+        .img9 {
+            background-image: url('img/08-1.jpg')
+        }
+        .img10 {
+            background-image: url('img/09-3.jpg')
+        }
+
+        .swiper-button-prev,
+        .swiper-container-rtl .swiper-button-next {
+            background-image: none;
+            color: gray;
+        }
+
+        .swiper-button-next,
+        .swiper-container-rtl .swiper-button-prev {
+            background-image: none;
+            color: gray;
+        }
+        h1 {
+            position: relative;
+            top: 80px;
+            left: 20px;
+        }
+     
+  
+    </style>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+     crossorigin="anonymous">
+      <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+      <style>
+          .btn-border {
+            border:solid 2px;
+        }
+        .btn-outline-secondary {
+            font-weight:bold;
+
+        }
+          
+      
+      </style>
+</head>
+
+<body>
+   
+    <h1>髮型作品 
+            <button type="button" class="btn btn-outline-secondary btn-border">Girl's</button>
+            <button type="button" class="btn btn-outline-secondary btn-border">Men's</button>
+    </h1>
+    
+
+
+    <div class="swiper-container swiper-container1">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="bg-img img1"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="bg-img img2"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="bg-img img3"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="bg-img img4"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="bg-img img5"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="bg-img img6"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="bg-img img7"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="bg-img img8"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="bg-img img9"></div>
+            </div>
+
+        </div>
+        <div class="swiper-button-next">
+            <i class="fas fa-angle-right fa-5x"></i>
+        </div>
+        <div class="swiper-button-prev">
+            <i class="fas fa-angle-left fa-5x"></i>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="swiper-container swiper-container2">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                    <div class="bg-img img10"></div>
+            </div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+
+        </div>
+        <div class="swiper-button-next">
+            <i class="fas fa-angle-right fa-5x"></i>
+        </div>
+        <div class="swiper-button-prev">
+            <i class="fas fa-angle-left  fa-5x"></i>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="swiper-container swiper-container3">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+
+        </div>
+        <div class="swiper-button-next">
+            <i class="fas fa-angle-right fa-5x"></i>
+        </div>
+        <div class="swiper-button-prev">
+            <i class="fas fa-angle-left fa-5x"></i>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    
+    <script src="js/swiper.min.js"></script>
+    <script>
+        var swiper1 = new Swiper('.swiper-container1', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            slidesPerView: 4,
+            spaceBetween: 10,
+            freeMode: true,
+            loop:true,
+        });
+    </script>
+    <script>
+        var swiper2 = new Swiper('.swiper-container2', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            slidesPerView: 4,
+            spaceBetween: 10,
+            freeMode: true,
+        });
+    </script>
+    <script>
+        var swiper3 = new Swiper('.swiper-container3', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            slidesPerView: 4,
+            spaceBetween: 10,
+            freeMode: true,
+        });
+    </script>
+
+
+
+</body>
+
+</html>
