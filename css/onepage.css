@@ -258,6 +258,9 @@ li {
     margin-left: 20px;
     margin-bottom: 20px;
 }
+.italy {
+    letter-spacing: 8px;
+}
 
 /* 髮型作品:swiper+分頁+modal套件 */
 .container-fluid.bg-light {
@@ -605,7 +608,7 @@ footer {
     position: fixed;
     bottom: 50px;
     z-index: 999;
-    right: 16px;
+    right: 1%;
     opacity: 0;
     cursor: pointer;
 }
@@ -648,15 +651,70 @@ footer {
     display: block;
     font-size: 16px;
     line-height: 25px;
+    letter-spacing: 6px;
 }
 }
 @media screen and (max-width:500px){
+    h1 {
+        font-size: 36px;
+        letter-spacing: 6px;
+    }
+    h2 {
+        font-size: 25px;
+        letter-spacing: 4px;
+    }
     .sitemap {
        width: 100%;
         border-right:none;  
     }
     .container-sitemap {
         height: 280px;   
+    }
+    .info ul li {
+        font-size: 14px;
+        line-height: 25px;
+        letter-spacing: 5px;
+        text-align: center;
+    }
+    .card-text,.experience {
+        letter-spacing: 2px;
+        font-size: 18px;
+    }
+    .treatment-subtitle{
+        font-size: 22px;
+        letter-spacing:6px;
+    }
+    .treatment-text {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .btn {
+        padding: 5px;
+    }
+    .price-ex-btm {
+        font-size: 12px;
+        letter-spacing: 4px;
+    }
+    .add {
+        font-size: 16px;
+    }
+    .contact {
+        top: 300px;
+        width: 100%;
+        height: 200px;
+        text-align: center;
+        right:0;
+    }
+    .contact-text {
+        line-height: 20px;
+        font-size: 16px;
+    }
+    #map {
+        height: 300px;
+    }
+    .bg-img,.bg-img-m {
+        background-size:contain;
+        height: 350px;
     }
 
 }
