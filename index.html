@@ -1,0 +1,2699 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- boostrap的CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <!-- swiper套件(用於髮型照片)的css連結 -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <!-- fontawesome的CDN -->
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <!-- onepage的css檔連結 -->
+    <link rel="stylesheet" href="css/onepage.css">
+    <!-- AOS的CDN -->
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <!-- hover.css的css檔連結 -->
+    <link rel="stylesheet" href="css/hover-min.css">
+</head>
+
+
+
+<body>
+
+    <div id="frontpage">
+        <!-- 入口頁動畫 -->
+        <div class="enter">
+            <ul class="puppet">
+                <li class="back wheel">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1412/HK-backwheel.png">
+                </li>
+                <li class="front wheel">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1412/HK-frontwheel.png">
+                </li>
+                <li class="scooter">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1412/HK-scooter.png">
+                </li>
+                <li class="kitty">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1412/HK-kitty.png">
+                </li>
+                <li class="head">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1412/HK-head.png">
+                </li>
+            </ul>
+            <footer></footer>
+        </div>
+    </div>
+
+
+
+    <div id="backpage">
+        <!-- navbar -->
+        <nav class="navbar nav-down fixed-top navbar-expand-lg navbar-light " style="background-color:rgba(255, 255, 255, 0.8)">
+            <div class="container container-nav">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link hvr-shrink " href="#container-about">關於我
+                                <!-- <span class="sr-only">(current)</span> -->
+                            </a>
+                            <a class="nav-link eg " href="#container-about">About
+                                <!-- <span class="sr-only">(current)</span> -->
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#portfolio-title">髮型作品</a>
+                            <a class="nav-link eg" href="#portfolio-title">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#container-price">價目表</a>
+                            <a class="nav-link eg" href="#container-price">Price</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#container-map">立即預約</a>
+                            <a class="nav-link eg" href="#container-map">Reservation</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </nav>
+
+        <!-- 入口slider -->
+        <!-- Swiper -->
+        <div class="swiper-container swiper-container-ini">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img class="img-fluid img-ini" src="img/spring.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid img-ini" src="img/summerv1.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid img-ini" src="img/autumn-v2.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img class="img-fluid img-ini" src="img/winter.jpg" alt="">
+                </div>
+
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next">
+                <i class="fas fa-angle-right fa-5x" style="opacity:0.3;"></i>
+            </div>
+            <div class="swiper-button-prev">
+                <i class="fas fa-angle-left fa-5x" style="opacity:0.3;"></i>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="info">
+            <ul>
+                <li>
+                    <i class="fas fa-map-marker-alt "></i>營業時間11:00-21:00</li>
+                <li>
+                    <i class="fas fa-clock"></i>台中市北區一中街39號</li>
+            </ul>
+        </div>
+
+
+
+        <!-- 關於我html -->
+
+        <div class="container container-about" id="container-about">
+            <h1>關於我</h1>
+            <div class="row">
+                <div data-aos="fade-right" data-aos-duration="500" data-aos-delay="500" class="d-flex col-lg-6 col-md-12 col-sm-12 col-12">
+                    <div class="card">
+                        <div class="img-fluid about-img"></div>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="500" class=" d-flex col-lg-6 col-md-12 col-sm-12 col-12 align-self-start">
+                    <div class="card-body">
+                        <h2 class="card-title">設計理念</h2>
+                        <p class="card-text ">
+                            最美好的事莫過於開心。
+                            <br> 那你最美好的時光在什麼時候呢？
+                            <br> 我最美好的時光，
+                            <br> 是我無時無刻在變的秀髮。
+                            <br> 誰說喜新厭舊不好？
+                            <br> 舊的不去新的不來。
+                            <br> 讓你每次來找我都有不同的視覺！
+
+                        </p>
+                        <h2 class="card-title">重要經歷</h2>
+                        <ul>
+                            <li>米蘭造型剪髮課程</li>
+                            <li>米蘭創意燙髮課程</li>
+                            <li>弘光頭皮養護師SPA課程</li>
+                            <li style="letter-spacing: 8px;">義大利LTALT外國師資染髮研習班</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid bg-light">
+            <div class="container container-portfolio">
+                <!-- 髮型作品html -->
+                <h1 id="portfolio-title">髮型作品
+
+                    <button type="button" class="btn btn-outline-secondary btn-border btn-g active" id="button1">Girl's</button>
+                    <button type="button" class="btn btn-outline-secondary btn-border btn-m" id="button2">Men's</button>
+                </h1>
+
+
+                <div class="swiper-container swiper-container1" id="swiper-container1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide hvr-shrink">
+                            <div class="bg-img img1" data-toggle="modal" data-target="#G-Modal-1"></div>
+                        </div>
+                        <div class="swiper-slide hvr-shrink">
+                            <div class="bg-img img2" data-toggle="modal" data-target="#G-Modal-2"></div>
+                        </div>
+                        <div class="swiper-slide hvr-shrink">
+                            <div class="bg-img img3" data-toggle="modal" data-target="#G-Modal-3"></div>
+                        </div>
+                        <div class="swiper-slide hvr-shrink">
+                            <div class="bg-img img4" data-toggle="modal" data-target="#G-Modal-4"></div>
+                        </div>
+                        <div class="swiper-slide hvr-shrink">
+                            <div class="bg-img img5" data-toggle="modal" data-target="#G-Modal-5"></div>
+                        </div>
+                        <div class="swiper-slide hvr-shrink">
+                            <div class="bg-img img6" data-toggle="modal" data-target="#G-Modal-6"></div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-next">
+                        <i class="fas fa-angle-right fa-5x"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="fas fa-angle-left fa-5x"></i>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="swiper-container swiper-container2" id="swiper-container2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide hvr-shrink">
+                            <div class="bg-img img7 " data-toggle="modal" data-target="#G-Modal-7"></div>
+                        </div>
+                        <div class="swiper-slide hvr-shrink">
+                            <div class="bg-img img8" data-toggle="modal" data-target="#G-Modal-8"></div>
+                        </div>
+                        <div class="swiper-slide hvr-shrink">
+                            <div class="bg-img img9" data-toggle="modal" data-target="#G-Modal-9"></div>
+                        </div>
+                        <div class="swiper-slide hvr-shrink">
+                            <div class="bg-img img10" data-toggle="modal" data-target="#G-Modal-10"></div>
+                        </div>
+                        <div class="swiper-slide hvr-shrink">
+                            <div class="bg-img img11" data-toggle="modal" data-target="#G-Modal-11"></div>
+                        </div>
+                        <div class="swiper-slide hvr-shrink">
+                            <div class="bg-img img12" data-toggle="modal" data-target="#G-Modal-12"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next">
+                        <i class="fas fa-angle-right fa-5x"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="fas fa-angle-left  fa-5x"></i>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="swiper-container swiper-container3" id="swiper-container3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide hvr-shrink">
+                            <div class="bg-img-m  img-m-1" data-toggle="modal" data-target="#M-Modal-1"></div>
+                        </div>
+                        <div class="swiper-slide hvr-shrink">
+                            <div class="bg-img-m img-m-2" data-toggle="modal" data-target="#M-Modal-2"></div>
+                        </div>
+                        <div class="swiper-slide hvr-shrink">
+                            <div class="bg-img-m img-m-3" data-toggle="modal" data-target="#M-Modal-3"></div>
+                        </div>
+                        <div class="swiper-slide hvr-shrink">
+                            <div class="bg-img-m img-m-4 " data-toggle="modal" data-target="#M-Modal-4"></div>
+                        </div>
+                        <div class="swiper-slide hvr-shrink">
+                            <div class="bg-img-m img-m-5" data-toggle="modal" data-target="#M-Modal-5"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next">
+                        <i class="fas fa-angle-right fa-5x"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="fas fa-angle-left fa-5x"></i>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="swiper-container swiper-container4" id="swiper-container4">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide hvr-shrink">
+                            <div class="bg-img-m img-m-6" data-toggle="modal" data-target="#M-Modal-6"></div>
+                        </div>
+                        <div class="swiper-slide hvr-shrink">
+                            <div class="bg-img-m img-m-7" data-toggle="modal" data-target="#M-Modal-7"></div>
+                        </div>
+                        <div class="swiper-slide hvr-shrink">
+                            <div class="bg-img-m img-m-8" data-toggle="modal" data-target="#M-Modal-8"></div>
+                        </div>
+                        <div class="swiper-slide hvr-shrink">
+                            <div class="bg-img-m img-m-9" data-toggle="modal" data-target="#M-Modal-9"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next">
+                        <i class="fas fa-angle-right fa-5x"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="fas fa-angle-left fa-5x"></i>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+            <!-- Modal -->
+            <div class="modal fade bd-example-modal-lg" id="G-Modal-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg " role="document">
+                    <div class="modal-content">
+                        <div class="contain modal-body">
+                            <div class="row">
+                                <!-- Swiper -->
+                                <div class="col-lg-6 col-12">
+                                    <div class="swiper-container swiper-container-modal-g-1">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img  src="img/1/00-5.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="img/1/00-4.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="img/1/00-1-COVER.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="img/1/00-3.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <!-- Add Arrows -->
+                                        <div class="swiper-button-next" style="color:rgba(75,76,76, 0.3)">
+                                            <i class="fas fa-angle-right fa-5x"></i>
+                                        </div>
+                                        <div class="swiper-button-prev">
+                                            <i class="fas fa-angle-left fa-5x" style="color:rgba(75,76,76, 0.3)"></i>
+                                        </div>
+                                        <!-- Add Pagination -->
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12">
+                                    <h3>設計重點</h3>
+                                    <p class="intro">造型剪髮</p>
+                                    <h3>髮型說明</h3>
+                                    <p class="intro">
+                                        女孩兒常遇到的難題：
+                                        <br> 留了很久的頭髮到底要不要剪？怕不適合自己、怕剪完臉變大。 這位女孩兒留了好幾年的長髮、也不剪瀏海，但剪完的成品她很滿意，我自己也很開心！
+                                        <br> 想要換髮型?
+                                        <br> 妳來與我溝通，讓我幫妳打造屬於自己獨一無二的髮型！
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" data-toggle="modal" data-target="#G-Modal-12" class="btn btn-light d-flex justify-content-between align-items-center"
+                                data-dismiss="modal">
+                                <i class="fas fa-angle-double-left"></i>
+                                <span>Preview </span>
+
+                            </button>
+                            <button type="button" data-toggle="modal" data-target="#G-Modal-2" class="btn btn-light d-flex justify-content-between align-items-center"
+                                data-dismiss="modal">
+                                <span>Next</span>
+                                <i class="fas fa-angle-double-right"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary " data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade bd-example-modal-lg" id="G-Modal-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg " role="document">
+                    <div class="modal-content">
+                        <div class="contain modal-body">
+                            <div class="row">
+                                <!-- Swiper -->
+                                <div class="col-lg-6 col-12">
+                                    <div class="swiper-container swiper-container-modal-g-2">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="img/2/01.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="img/2/02.jpg" alt="">
+                                            </div>
+
+                                        </div>
+                                        <!-- Add Arrows -->
+                                        <div class="swiper-button-next" style="color:rgba(75,76,76, 0.3)">
+                                            <i class="fas fa-angle-right fa-5x"></i>
+                                        </div>
+                                        <div class="swiper-button-prev">
+                                            <i class="fas fa-angle-left fa-5x" style="color:rgba(75,76,76, 0.3)"></i>
+                                        </div>
+                                        <!-- Add Pagination -->
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12">
+                                    <h3>設計重點</h3>
+                                    <p class="intro">鬆鬆燙</p>
+                                    <h3>髮型說明</h3>
+                                    <p class="intro">
+                                        今天燙的兩位美麗客人，燙完滿意度超好!
+                                        <br> 今年最流行的《鬆鬆燙》
+                                        <br> 突破以往的一定要用哄罩抹很多造型品，只要燙完，抹護髮吹乾即可。 想要外翻、內翻，隨你自己想要的去整理!想要不一樣的髮型?可以來找我幫你!
+
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" data-toggle="modal" data-target="#G-Modal-1" class="btn btn-light d-flex justify-content-between align-items-center"
+                                data-dismiss="modal">
+                                <i class="fas fa-angle-double-left"></i>
+                                <span>Preview </span>
+
+                            </button>
+                            <button type="button" data-toggle="modal" data-target="#G-Modal-3" class="btn btn-light d-flex justify-content-between align-items-center"
+                                data-dismiss="modal">
+                                <span>Next</span>
+                                <i class="fas fa-angle-double-right"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary " data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade bd-example-modal-lg" id="G-Modal-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg " role="document">
+                    <div class="modal-content">
+                        <div class="contain modal-body">
+                            <div class="row">
+                                <!-- Swiper -->
+                                <div class="col-lg-6 col-12">
+                                    <div class="swiper-container swiper-container-modal-g-3">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="img/3/03.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="img/3/09.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="img/3/10.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="img/3/11.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="img/3/13.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <!-- Add Arrows -->
+                                        <div class="swiper-button-next" style="color:rgba(75,76,76, 0.3)">
+                                            <i class="fas fa-angle-right fa-5x"></i>
+                                        </div>
+                                        <div class="swiper-button-prev">
+                                            <i class="fas fa-angle-left fa-5x" style="color:rgba(75,76,76, 0.3)"></i>
+                                        </div>
+                                        <!-- Add Pagination -->
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12">
+                                    <h3>設計重點</h3>
+                                    <p class="intro">鬆鬆燙</p>
+                                    <h3>髮型說明</h3>
+                                    <p class="intro">
+                                        今年最流行的《鬆鬆燙》
+                                        <br> 突破以往的一定要用哄罩抹很多造型品，只要燙完，抹護髮吹乾即可。想要外翻、內翻，隨你自己想要的去整理!想要不一樣的髮型?可以來找我幫你!
+
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" data-toggle="modal" data-target="#G-Modal-2" class="btn btn-light d-flex justify-content-between align-items-center"
+                                data-dismiss="modal">
+                                <i class="fas fa-angle-double-left"></i>
+                                <span>Preview </span>
+
+                            </button>
+                            <button type="button" data-toggle="modal" data-target="#G-Modal-4" class="btn btn-light d-flex justify-content-between align-items-center"
+                                data-dismiss="modal">
+                                <span>Next</span>
+                                <i class="fas fa-angle-double-right"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary " data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade bd-example-modal-lg" id="G-Modal-4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg " role="document">
+                    <div class="modal-content">
+                        <div class="contain modal-body">
+                            <div class="row">
+                                <!-- Swiper -->
+                                <div class="col-lg-7 col-12 ">
+                                    <div class="swiper-container swiper-container-modal-g-4">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="img/4/04.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="img/4/05.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="img/4/06.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="img/4/07-2.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="img/4/08.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="img/4/12-1.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <!-- Add Arrows -->
+                                        <div class="swiper-button-next" style="color:rgba(75,76,76, 0.3)">
+                                            <i class="fas fa-angle-right fa-5x"></i>
+                                        </div>
+                                        <div class="swiper-button-prev">
+                                            <i class="fas fa-angle-left fa-5x" style="color:rgba(75,76,76, 0.3)"></i>
+                                        </div>
+                                        <!-- Add Pagination -->
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-12">
+                                    <h3>設計重點</h3>
+                                    <p class="intro">染髮</p>
+                                    <p class="intro">挑染</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" data-toggle="modal" data-target="#G-Modal-3" class="btn btn-light d-flex justify-content-between align-items-center"
+                                data-dismiss="modal">
+                                <i class="fas fa-angle-double-left"></i>
+                                <span>Preview </span>
+
+                            </button>
+                            <button type="button" data-toggle="modal" data-target="#G-Modal-5" class="btn btn-light d-flex justify-content-between align-items-center"
+                                data-dismiss="modal">
+                                <span>Next</span>
+                                <i class="fas fa-angle-double-right"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary " data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade bd-example-modal-lg" id="G-Modal-5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg " role="document">
+                    <div class="modal-content">
+                        <div class="contain modal-body">
+                            <div class="row">
+                                <!-- Swiper -->
+                                <div class="col-lg-6 col-12">
+                                    <div class="swiper-container swiper-container-modal-g-5">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="/img/5/16-1.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="img/5/16-2.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="img/5/16-3.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="img/5/16-4.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <!-- Add Arrows -->
+                                        <div class="swiper-button-next" style="color:rgba(75,76,76, 0.3)">
+                                            <i class="fas fa-angle-right fa-5x"></i>
+                                        </div>
+                                        <div class="swiper-button-prev">
+                                            <i class="fas fa-angle-left fa-5x" style="color:rgba(75,76,76, 0.3)"></i>
+                                        </div>
+                                        <!-- Add Pagination -->
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12">
+                                    <h3>設計重點</h3>
+                                    <p class="intro">挑染:深藍紫色挑染粉紅色</p>
+                                    <h3>髮型說明</h3>
+                                    <p class="intro">
+                                        今天來了一對情侶，很愛玩色的他們這次又染不一樣的顏色囉! 深藍紫色挑染粉紅色 適合愛美的她， 如果有想嘗試可以來找Ariel！
+
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" data-toggle="modal" data-target="#G-Modal-4" class="btn btn-light d-flex justify-content-between align-items-center"
+                                data-dismiss="modal">
+                                <i class="fas fa-angle-double-left"></i>
+                                <span>Preview </span>
+
+                            </button>
+                            <button type="button" data-toggle="modal" data-target="#G-Modal-6" class="btn btn-light d-flex justify-content-between align-items-center"
+                                data-dismiss="modal">
+                                <span>Next</span>
+                                <i class="fas fa-angle-double-right"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary " data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade bd-example-modal-lg" id="G-Modal-6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg " role="document">
+                    <div class="modal-content">
+                        <div class="contain modal-body">
+                            <div class="row">
+                                <!-- Swiper -->
+                                <div class="col-lg-6 col-12">
+                                    <div class="swiper-container swiper-container-modal-g-6">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="img/6/14-1.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="img/6/14-2.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="img/6/14-4.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <!-- Add Arrows -->
+                                        <div class="swiper-button-next" style="color:rgba(75,76,76, 0.3)">
+                                            <i class="fas fa-angle-right fa-5x"></i>
+                                        </div>
+                                        <div class="swiper-button-prev">
+                                            <i class="fas fa-angle-left fa-5x" style="color:rgba(75,76,76, 0.3)"></i>
+                                        </div>
+                                        <!-- Add Pagination -->
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12">
+                                    <h3>設計重點</h3>
+                                    <p class="intro">染髮</p>
+                                    <p class="intro">接髮</p>
+                                    <h3>髮型說明</h3>
+                                    <p class="intro">
+
+                                        頭髮髮量少又毛躁，
+                                        <br> 是否很困擾呢?幫頭髮大改造!
+                                        <br> 染髮的色系挑選「質感棕紅色」讓皮膚增亮、髮質瞬間不毛躁，再利用接髮讓髮量有厚重感，整體大改造完變成了氣質美女!想讓你的秀髮進行改造?來找Ariel幫助妳！
+
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" data-toggle="modal" data-target="#G-Modal-5" class="btn btn-light d-flex justify-content-between align-items-center"
+                                data-dismiss="modal">
+                                <i class="fas fa-angle-double-left"></i>
+                                <span>Preview </span>
+
+                            </button>
+                            <button type="button" data-toggle="modal" data-target="#G-Modal-7" class="btn btn-light d-flex justify-content-between align-items-center"
+                                data-dismiss="modal">
+                                <span>Next</span>
+                                <i class="fas fa-angle-double-right"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary " data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade bd-example-modal-lg" id="G-Modal-7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg " role="document">
+                    <div class="modal-content">
+                        <div class="contain modal-body">
+                            <div class="row">
+                                <!-- Swiper -->
+                                <div class="col-lg-6 col-12">
+                                    <div class="swiper-container swiper-container-modal-g-7">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="img/7/17-1.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="img/7/17-3.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="img/7/15-1.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="img/7/15-2.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <!-- Add Arrows -->
+                                        <div class="swiper-button-next" style="color:rgba(75,76,76, 0.3)">
+                                            <i class="fas fa-angle-right fa-5x"></i>
+                                        </div>
+                                        <div class="swiper-button-prev">
+                                            <i class="fas fa-angle-left fa-5x" style="color:rgba(75,76,76, 0.3)"></i>
+                                        </div>
+                                        <!-- Add Pagination -->
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12">
+                                    <h3>設計重點</h3>
+                                    <p class="intro">光澤離直燙髮</p>
+                                    <p class="intro">離直內灣燙髮</p>
+                                    <h3>髮型說明</h3>
+                                    <p class="intro">
+                                        是否還在為了毛躁頭髮煩惱？
+                                        <br> 想把毛躁的自然捲變的好整理又很有光澤嗎？！
+                                        <br> 快快來找 Ariel讓妳變氣質美女！
+
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" data-toggle="modal" data-target="#G-Modal-6" class="btn btn-light d-flex justify-content-between align-items-center"
+                                data-dismiss="modal">
+                                <i class="fas fa-angle-double-left"></i>
+                                <span>Preview </span>
+
+                            </button>
+                            <button type="button" data-toggle="modal" data-target="#G-Modal-8" class="btn btn-light d-flex justify-content-between align-items-center"
+                                data-dismiss="modal">
+                                <span>Next</span>
+                                <i class="fas fa-angle-double-right"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary " data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade bd-example-modal-lg" id="G-Modal-8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg " role="document">
+                    <div class="modal-content">
+                        <div class="contain modal-body">
+                            <div class="row">
+                                <!-- Swiper -->
+                                <div class="col-lg-7 col-12">
+                                    <div class="swiper-container swiper-container-modal-g-8">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="img/8/18-1.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="img/8/18-3.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="img/8/18-2.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="img/8/18-4.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="img/8/18-5.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <!-- Add Arrows -->
+                                        <div class="swiper-button-next" style="color:rgba(75,76,76, 0.3)">
+                                            <i class="fas fa-angle-right fa-5x"></i>
+                                        </div>
+                                        <div class="swiper-button-prev">
+                                            <i class="fas fa-angle-left fa-5x" style="color:rgba(75,76,76, 0.3)"></i>
+                                        </div>
+                                        <!-- Add Pagination -->
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-12">
+                                    <h3>設計重點</h3>
+                                    <p class="intro">質感咖啡紅</p>
+                                    <h3>髮型說明</h3>
+                                    <p class="intro">
+                                        炎炎的夏季來臨，讓皮膚看起來有提亮的效果！室內淡淡的顏色室外暖暖的咖啡帶紅顏色，想要染髮卻怕髮色太亮的女孩們可以嘗試看看唷！
+                                       
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" data-toggle="modal" data-target="#G-Modal-7" class="btn btn-light d-flex justify-content-between align-items-center"
+                                data-dismiss="modal">
+                                <i class="fas fa-angle-double-left"></i>
+                                <span>Preview </span>
+
+                            </button>
+                            <button type="button" data-toggle="modal" data-target="#G-Modal-9" class="btn btn-light d-flex justify-content-between align-items-center"
+                                data-dismiss="modal">
+                                <span>Next</span>
+                                <i class="fas fa-angle-double-right"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary " data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade bd-example-modal-lg" id="G-Modal-9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg " role="document">
+                    <div class="modal-content">
+                        <div class="contain modal-body">
+                            <div class="row">
+                                <!-- Swiper -->
+                                <div class="col-lg-7 col-12">
+                                    <div class="swiper-container swiper-container-modal-g-9">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="img/9/19.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="img/9/20.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="img/9/21.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="img/9/22.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <!-- Add Arrows -->
+                                        <div class="swiper-button-next" style="color:rgba(75,76,76, 0.3)">
+                                            <i class="fas fa-angle-right fa-5x"></i>
+                                        </div>
+                                        <div class="swiper-button-prev">
+                                            <i class="fas fa-angle-left fa-5x" style="color:rgba(75,76,76, 0.3)"></i>
+                                        </div>
+                                        <!-- Add Pagination -->
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-12">
+                                    <h3>設計重點</h3>
+                                    <p class="intro">挑染</p>
+                                    <p class="intro">特殊染</p>
+                                    <p class="intro">質感染</p>
+
+                                    <h3>髮型說明</h3>
+                                    <p class="intro">
+                                        還在染大眾顏色嗎？！
+                                        <br> 是否想煥然一新！！
+                                        <br> 只要你想換顏色，
+                                        <br> 統統都可以滿足你！！
+                                        <br> 給你截然不同的感覺!
+
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" data-toggle="modal" data-target="#G-Modal-8" class="btn btn-light d-flex justify-content-between align-items-center"
+                                data-dismiss="modal">
+                                <i class="fas fa-angle-double-left"></i>
+                                <span>Preview </span>
+
+                            </button>
+                            <button type="button" data-toggle="modal" data-target="#G-Modal-10" class="btn btn-light d-flex justify-content-between align-items-center"
+                                data-dismiss="modal">
+                                <span>Next</span>
+                                <i class="fas fa-angle-double-right"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary " data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade bd-example-modal-lg" id="G-Modal-10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg " role="document">
+                    <div class="modal-content">
+                        <div class="contain modal-body">
+                            <div class="row">
+                                <!-- Swiper -->
+                                <div class="col-lg-6 col-12">
+                                    <div class="swiper-container swiper-container-modal-g-10">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="img/10/23-3.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="img/10/23-2.jpg" alt="">
+                                            </div>
+
+                                        </div>
+                                        <!-- Add Arrows -->
+                                        <div class="swiper-button-next" style="color:rgba(75,76,76, 0.3)">
+                                            <i class="fas fa-angle-right fa-5x"></i>
+                                        </div>
+                                        <div class="swiper-button-prev">
+                                            <i class="fas fa-angle-left fa-5x" style="color:rgba(75,76,76, 0.3)"></i>
+                                        </div>
+                                        <!-- Add Pagination -->
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12">
+                                    <h3>設計重點</h3>
+                                    <p class="intro">外翻大捲</p>
+                                    <h3>髮型說明</h3>
+                                    <p class="intro">
+                                        誰說燙捲會變老、變成老太婆?
+                                        <br> 誰說燙捲難整理?!
+                                        <br> 只要抹護髮產品、手繞吹乾，
+                                        <br> 輕而易舉讓妳變氣質美女！！
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" data-toggle="modal" data-target="#G-Modal-9" class="btn btn-light d-flex justify-content-between align-items-center"
+                                data-dismiss="modal">
+                                <i class="fas fa-angle-double-left"></i>
+                                <span>Preview </span>
+
+                            </button>
+                            <button type="button" data-toggle="modal" data-target="#G-Modal-11" class="btn btn-light d-flex justify-content-between align-items-center"
+                                data-dismiss="modal">
+                                <span>Next</span>
+                                <i class="fas fa-angle-double-right"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary " data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade bd-example-modal-lg" id="G-Modal-11" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg " role="document">
+                    <div class="modal-content">
+                        <div class="contain modal-body">
+                            <div class="row">
+                                <!-- Swiper -->
+                                <div class="col-lg-6 col-12">
+                                    <div class="swiper-container swiper-container-modal-g-11">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="img/11/24.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="img/11/25.jpg" alt="">
+                                            </div>
+
+                                        </div>
+                                        <!-- Add Arrows -->
+                                        <div class="swiper-button-next" style="color:rgba(75,76,76, 0.3)">
+                                            <i class="fas fa-angle-right fa-5x"></i>
+                                        </div>
+                                        <div class="swiper-button-prev">
+                                            <i class="fas fa-angle-left fa-5x" style="color:rgba(75,76,76, 0.3)"></i>
+                                        </div>
+                                        <!-- Add Pagination -->
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12">
+                                    <h3>設計重點</h3>
+                                    <p class="intro">娃娃燙</p>
+                                    <p class="intro">陶瓷燙</p>
+                                    <h3>髮型說明</h3>
+                                    <p class="intro">
+                                        看膩了長髮?! 想換換不樣的髮型，但又害怕?!兩種不同整理方式，會有不同的感覺：
+                                        <br> 如想走可愛， 利用烘罩把頭髮烘蓬鬆點、捲一點;如想走氣質風，只要用手繞吹乾變成大捲，
+                                        <br> 依妳的心情，想要怎麼整理都可以！
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" data-toggle="modal" data-target="#G-Modal-10" class="btn btn-light d-flex justify-content-between align-items-center"
+                                data-dismiss="modal">
+                                <i class="fas fa-angle-double-left"></i>
+                                <span>Preview </span>
+
+                            </button>
+                            <button type="button" data-toggle="modal" data-target="#G-Modal-12" class="btn btn-light d-flex justify-content-between align-items-center"
+                                data-dismiss="modal">
+                                <span>Next</span>
+                                <i class="fas fa-angle-double-right"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary " data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade bd-example-modal-lg" id="G-Modal-12" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg " role="document">
+                    <div class="modal-content">
+                        <div class="contain modal-body">
+                            <div class="row">
+                                <!-- Swiper -->
+                                <div class="col-lg-6 col-12">
+                                    <div class="swiper-container swiper-container-modal-g-12">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="img/12/27-1.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="img/12/27-2.jpg" alt="">
+                                            </div>
+
+                                        </div>
+                                        <!-- Add Arrows -->
+                                        <div class="swiper-button-next" style="color:rgba(75,76,76, 0.3)">
+                                            <i class="fas fa-angle-right fa-5x"></i>
+                                        </div>
+                                        <div class="swiper-button-prev">
+                                            <i class="fas fa-angle-left fa-5x" style="color:rgba(75,76,76, 0.3)"></i>
+                                        </div>
+                                        <!-- Add Pagination -->
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12">
+                                    <h3>設計重點</h3>
+                                    <p class="intro">接髮</p>
+                                    <h3>髮型說明</h3>
+                                    <p class="intro">看膩了中長髮的髮型想試試看接長髮的樣子?!想要嘗試大膽色，又不想在真髮上漂色?!
+                                        <br> 所以利用髮片染出特殊色，讓妳接完有挑染的感覺，既不傷害真髮又有妳想要的特殊色，所以真髮幫搭配深色的咖啡紅髮片，用兩種顏色搭配 『亮綠色 』與『桃紅色』，讓她整個接完『亮綠色』部分有若隱若現的感覺，再加上水波紋的卷度，整體上既自然又漂亮!
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" data-toggle="modal" data-target="#G-Modal-11" class="btn btn-light d-flex justify-content-between align-items-center"
+                                data-dismiss="modal">
+                                <i class="fas fa-angle-double-left"></i>
+                                <span>Preview </span>
+
+                            </button>
+                            <button type="button" data-toggle="modal" data-target="#G-Modal-1" class="btn btn-light d-flex justify-content-between align-items-center"
+                                data-dismiss="modal">
+                                <span>Next</span>
+                                <i class="fas fa-angle-double-right"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary " data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade bd-example-modal-lg" id="M-Modal-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg " role="document">
+                    <div class="modal-content">
+                        <div class="contain modal-body">
+                            <div class="row">
+                                <!-- Swiper -->
+                                <div class="col-lg-6 col-12">
+                                    <div class="swiper-container swiper-container-modal-m-1">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="img/men/01-1.jpg" alt="">
+                                            </div>
+
+                                        </div>
+                                        <!-- Add Arrows -->
+                                        <div class="swiper-button-next" style="color:rgba(75,76,76, 0.3)">
+                                            <i class="fas fa-angle-right fa-5x"></i>
+                                        </div>
+                                        <div class="swiper-button-prev">
+                                            <i class="fas fa-angle-left fa-5x" style="color:rgba(75,76,76, 0.3)"></i>
+                                        </div>
+                                        <!-- Add Pagination -->
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12">
+                                    <h3>設計重點</h3>
+                                    <p class="intro">染髮:質感焦糖棕色</p>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" data-toggle="modal" data-target="#M-Modal-9" class="btn btn-light d-flex justify-content-between align-items-center"
+                                data-dismiss="modal">
+                                <i class="fas fa-angle-double-left"></i>
+                                <span>Preview </span>
+
+                            </button>
+                            <button type="button" data-toggle="modal" data-target="#M-Modal-2" class="btn btn-light d-flex justify-content-between align-items-center"
+                                data-dismiss="modal">
+                                <span>Next</span>
+                                <i class="fas fa-angle-double-right"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary " data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade bd-example-modal-lg" id="M-Modal-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg " role="document">
+                    <div class="modal-content">
+                        <div class="contain modal-body">
+                            <div class="row">
+                                <!-- Swiper -->
+                                <div class="col-lg-6 col-12">
+                                    <div class="swiper-container swiper-container-modal-m-2">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="img/men/09-1.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="img/men/09-2.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="img/men/09-3.jpg" alt="">
+                                            </div>
+
+                                        </div>
+                                        <!-- Add Arrows -->
+                                        <div class="swiper-button-next" style="color:rgba(75,76,76, 0.3)">
+                                            <i class="fas fa-angle-right fa-5x"></i>
+                                        </div>
+                                        <div class="swiper-button-prev">
+                                            <i class="fas fa-angle-left fa-5x" style="color:rgba(75,76,76, 0.3)"></i>
+                                        </div>
+                                        <!-- Add Pagination -->
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12">
+                                    <h3>設計重點</h3>
+                                    <p class="intro">個性油頭線條感
+                                    </p>
+                                    <h3>髮型說明</h3>
+                                    <p class="intro">
+                                        個性油頭再搭配線條感，讓你變型男帥哥!
+                                        <br> 每次剪髮都想不到要怎麼剪，是否很傷腦筋呢?快來找我幫你改造型男!
+
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" data-toggle="modal" data-target="#M-Modal-1" class="btn btn-light d-flex justify-content-between align-items-center"
+                                data-dismiss="modal">
+                                <i class="fas fa-angle-double-left"></i>
+                                <span>Preview </span>
+
+                            </button>
+                            <button type="button" data-toggle="modal" data-target="#M-Modal-3" class="btn btn-light d-flex justify-content-between align-items-center"
+                                data-dismiss="modal">
+                                <span>Next</span>
+                                <i class="fas fa-angle-double-right"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary " data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade bd-example-modal-lg" id="M-Modal-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg " role="document">
+                    <div class="modal-content">
+                        <div class="contain modal-body">
+                            <div class="row">
+                                <!-- Swiper -->
+                                <div class="col-lg-6 col-12">
+                                    <div class="swiper-container swiper-container-modal-m-3">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="img/men/03-2.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="img/men/03-1.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="img/men/03-3.jpg" alt="">
+                                            </div>
+
+                                        </div>
+                                        <!-- Add Arrows -->
+                                        <div class="swiper-button-next" style="color:rgba(75,76,76, 0.3)">
+                                            <i class="fas fa-angle-right fa-5x"></i>
+                                        </div>
+                                        <div class="swiper-button-prev">
+                                            <i class="fas fa-angle-left fa-5x" style="color:rgba(75,76,76, 0.3)"></i>
+                                        </div>
+                                        <!-- Add Pagination -->
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12">
+                                    <h3>設計重點</h3>
+                                    <p class="intro">染髮:霧感星空藍</p>
+                                    <h3>髮型說明</h3>
+                                    <p class="intro">
+                                        今日第一次來找 Ariel 染髮的他，想嘗試以往不一樣的色系。這次顏色我挑選「霧感星空藍」，完成後變身為型男帥哥！
+
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" data-toggle="modal" data-target="#M-Modal-2" class="btn btn-light d-flex justify-content-between align-items-center"
+                                data-dismiss="modal">
+                                <i class="fas fa-angle-double-left"></i>
+                                <span>Preview </span>
+
+                            </button>
+                            <button type="button" data-toggle="modal" data-target="#M-Modal-4" class="btn btn-light d-flex justify-content-between align-items-center"
+                                data-dismiss="modal">
+                                <span>Next</span>
+                                <i class="fas fa-angle-double-right"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary " data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade bd-example-modal-lg" id="M-Modal-4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg " role="document">
+                    <div class="modal-content">
+                        <div class="contain modal-body">
+                            <div class="row">
+                                <!-- Swiper -->
+                                <div class="col-lg-6 col-12">
+                                    <div class="swiper-container swiper-container-modal-m-4">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="img/men/02-1.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="img/men/02-2.jpg" alt="">
+                                            </div>
+
+                                        </div>
+                                        <!-- Add Arrows -->
+                                        <div class="swiper-button-next" style="color:rgba(75,76,76, 0.3)">
+                                            <i class="fas fa-angle-right fa-5x"></i>
+                                        </div>
+                                        <div class="swiper-button-prev">
+                                            <i class="fas fa-angle-left fa-5x" style="color:rgba(75,76,76, 0.3)"></i>
+                                        </div>
+                                        <!-- Add Pagination -->
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12">
+                                    <h3>設計重點</h3>
+                                    <p class="intro">挑染:鐵灰色帶奶茶色系</p>
+                                    <h3>髮型說明</h3>
+                                    <p class="intro">
+                                        今天來了一對情侶，很愛玩色的他們這次又染不一樣的顏色囉！鐵灰色帶奶茶色系，適合愛玩色的他，如果有想嘗試可以來找Ariel！
+
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" data-toggle="modal" data-target="#M-Modal-3" class="btn btn-light d-flex justify-content-between align-items-center"
+                                data-dismiss="modal">
+                                <i class="fas fa-angle-double-left"></i>
+                                <span>Preview </span>
+
+                            </button>
+                            <button type="button" data-toggle="modal" data-target="#M-Modal-5" class="btn btn-light d-flex justify-content-between align-items-center"
+                                data-dismiss="modal">
+                                <span>Next</span>
+                                <i class="fas fa-angle-double-right"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary " data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade bd-example-modal-lg" id="M-Modal-5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg " role="document">
+                    <div class="modal-content">
+                        <div class="contain modal-body">
+                            <div class="row">
+                                <!-- Swiper -->
+                                <div class="col-lg-6 col-12">
+                                    <div class="swiper-container swiper-container-modal-m-5">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="img/men/08-2.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="img/men/08-1.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="img/men/08-3.jpg" alt="">
+                                            </div>
+
+                                        </div>
+                                        <!-- Add Arrows -->
+                                        <div class="swiper-button-next" style="color:rgba(75,76,76, 0.3)">
+                                            <i class="fas fa-angle-right fa-5x"></i>
+                                        </div>
+                                        <div class="swiper-button-prev">
+                                            <i class="fas fa-angle-left fa-5x" style="color:rgba(75,76,76, 0.3)"></i>
+                                        </div>
+                                        <!-- Add Pagination -->
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12">
+                                    <h3>設計重點</h3>
+                                    <p class="intro">造型剪髮</p>
+                                    <h3>髮型說明</h3>
+                                    <p class="intro">
+                                        每次固定來找我剪髮！ 每次來都幫他換不一樣的髮型！ 下次想換什麼樣式的呢?炎炎夏季來臨，快快來找愛麗兒，換清爽髮型！
+
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" data-toggle="modal" data-target="#M-Modal-4" class="btn btn-light d-flex justify-content-between align-items-center"
+                                data-dismiss="modal">
+                                <i class="fas fa-angle-double-left"></i>
+                                <span>Preview </span>
+
+                            </button>
+                            <button type="button" data-toggle="modal" data-target="#M-Modal-6" class="btn btn-light d-flex justify-content-between align-items-center"
+                                data-dismiss="modal">
+                                <span>Next</span>
+                                <i class="fas fa-angle-double-right"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary " data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade bd-example-modal-lg" id="M-Modal-6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg " role="document">
+                    <div class="modal-content">
+                        <div class="contain modal-body">
+                            <div class="row">
+                                <!-- Swiper -->
+                                <div class="col-lg-7 col-12">
+                                    <div class="swiper-container swiper-container-modal-m-6">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="img/men/04-1.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="img/men/04-2.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="img/men/04-3.jpg" alt="">
+                                            </div>
+
+                                        </div>
+                                        <!-- Add Arrows -->
+                                        <div class="swiper-button-next" style="color:rgba(75,76,76, 0.3)">
+                                            <i class="fas fa-angle-right fa-5x"></i>
+                                        </div>
+                                        <div class="swiper-button-prev">
+                                            <i class="fas fa-angle-left fa-5x" style="color:rgba(75,76,76, 0.3)"></i>
+                                        </div>
+                                        <!-- Add Pagination -->
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-12">
+                                    <h3>設計重點</h3>
+                                    <p class="intro">挑染 </p>
+                                    <p class="intro">特殊染</p>
+                                    <p class="intro">質感染</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" data-toggle="modal" data-target="#M-Modal-5" class="btn btn-light d-flex justify-content-between align-items-center"
+                                data-dismiss="modal">
+                                <i class="fas fa-angle-double-left"></i>
+                                <span>Preview </span>
+
+                            </button>
+                            <button type="button" data-toggle="modal" data-target="#M-Modal-7" class="btn btn-light d-flex justify-content-between align-items-center"
+                                data-dismiss="modal">
+                                <span>Next</span>
+                                <i class="fas fa-angle-double-right"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary " data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade bd-example-modal-lg" id="M-Modal-7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg " role="document">
+                    <div class="modal-content">
+                        <div class="contain modal-body">
+                            <div class="row">
+                                <!-- Swiper -->
+                                <div class="col-lg-6 col-12">
+                                    <div class="swiper-container swiper-container-modal-m-7">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="img/men/05-1.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="img/men/05-2.jpg" alt="">
+                                            </div>
+
+                                        </div>
+                                        <!-- Add Arrows -->
+                                        <div class="swiper-button-next" style="color:rgba(75,76,76, 0.3)">
+                                            <i class="fas fa-angle-right fa-5x"></i>
+                                        </div>
+                                        <div class="swiper-button-prev">
+                                            <i class="fas fa-angle-left fa-5x" style="color:rgba(75,76,76, 0.3)"></i>
+                                        </div>
+                                        <!-- Add Pagination -->
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12">
+                                    <h3>設計重點</h3>
+                                    <p class="intro">挑染 </p>
+                                    <p class="intro">特殊染</p>
+                                    <p class="intro">質感染</p>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" data-toggle="modal" data-target="#M-Modal-6" class="btn btn-light d-flex justify-content-between align-items-center"
+                                data-dismiss="modal">
+                                <i class="fas fa-angle-double-left"></i>
+                                <span>Preview </span>
+
+                            </button>
+                            <button type="button" data-toggle="modal" data-target="#M-Modal-8" class="btn btn-light d-flex justify-content-between align-items-center"
+                                data-dismiss="modal">
+                                <span>Next</span>
+                                <i class="fas fa-angle-double-right"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary " data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade bd-example-modal-lg" id="M-Modal-8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg " role="document">
+                    <div class="modal-content">
+                        <div class="contain modal-body">
+                            <div class="row">
+                                <!-- Swiper -->
+                                <div class="col-lg-6 col-12">
+                                    <div class="swiper-container swiper-container-modal-m-8">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="img/men/07-1.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="img/men/07-2.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="img/men/07-3.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="img/men/07-4.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <!-- Add Arrows -->
+                                        <div class="swiper-button-next" style="color:rgba(75,76,76, 0.3)">
+                                            <i class="fas fa-angle-right fa-5x"></i>
+                                        </div>
+                                        <div class="swiper-button-prev">
+                                            <i class="fas fa-angle-left fa-5x" style="color:rgba(75,76,76, 0.3)"></i>
+                                        </div>
+                                        <!-- Add Pagination -->
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12">
+                                    <h3>設計重點</h3>
+                                    <p class="intro">半油頭+局部大捲</p>
+                                    <h3>髮型說明</h3>
+                                    <p class="intro">看膩了瀏海都往前?讓自己煥然一新，果斷嘗試不同的風格！</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" data-toggle="modal" data-target="#M-Modal-7" class="btn btn-light d-flex justify-content-between align-items-center"
+                                data-dismiss="modal">
+                                <i class="fas fa-angle-double-left"></i>
+                                <span>Preview </span>
+
+                            </button>
+                            <button type="button" data-toggle="modal" data-target="#M-Modal-9" class="btn btn-light d-flex justify-content-between align-items-center"
+                                data-dismiss="modal">
+                                <span>Next</span>
+                                <i class="fas fa-angle-double-right"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary " data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade bd-example-modal-lg" id="M-Modal-9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg " role="document">
+                    <div class="modal-content">
+                        <div class="contain modal-body">
+                            <div class="row">
+                                <!-- Swiper -->
+                                <div class="col-lg-6 col-12">
+                                    <div class="swiper-container swiper-container-modal-m-9">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="img/men/06-2.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="img/men/06-3.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="img/men/06-4.jpg" alt="">
+                                            </div>
+
+                                        </div>
+                                        <!-- Add Arrows -->
+                                        <div class="swiper-button-next" style="color:rgba(75,76,76, 0.3)">
+                                            <i class="fas fa-angle-right fa-5x"></i>
+                                        </div>
+                                        <div class="swiper-button-prev">
+                                            <i class="fas fa-angle-left fa-5x" style="color:rgba(75,76,76, 0.3)"></i>
+                                        </div>
+                                        <!-- Add Pagination -->
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12">
+                                    <h3>設計重點</h3>
+                                    <p class="intro">造型剪髮</p>
+                                    <h3>髮型說明</h3>
+                                    <p class="intro">每次都剪一樣的髮型 一成不變，換個可以不用抓髮蠟也能有線條感的髮型，相信自己可以不一樣！</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" data-toggle="modal" data-target="#M-Modal-8" class="btn btn-light d-flex justify-content-between align-items-center"
+                                data-dismiss="modal">
+                                <i class="fas fa-angle-double-left"></i>
+                                <span>Preview </span>
+
+                            </button>
+                            <button type="button" data-toggle="modal" data-target="#M-Modal-1" class="btn btn-light d-flex justify-content-between align-items-center"
+                                data-dismiss="modal">
+                                <span>Next</span>
+                                <i class="fas fa-angle-double-right"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary " data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 價目表 -->
+        <div class="container container-price " id="container-price">
+            <div class="row">
+                <div class="col-lg-7 col-md-12 col-sm-12 col-12 ">
+                    <h1 class="price">價目表
+                        <span class="price-ex">＊單位：NT$</span>
+                    </h1>
+                    <img class="card-img-top img-fluid" src="img/cut.jpg" alt="Card image cap">
+
+                </div>
+                <div  class="col-lg-5 col-md-12 col-sm-12 col-12 ">
+
+                    <h2 class="cut-title">剪髮</h2>
+                    <ul>
+                        <li class="cut-top d-flex justify-content-between align-items-center">
+                            <span>單剪</span>
+                            <span class="cut-price">200</span>
+                        </li>
+                    </ul>
+                    <h2 class="shampoo-title">洗髮</h2>
+                    <ul>
+                        <li class="cut d-flex justify-content-between align-items-center">
+                            <span>精油</span>
+                            <span class="cut-price">250</span>
+                        </li>
+                        <li class="cut d-flex justify-content-between align-items-center">
+                            <span>海鹽</span>
+                            <span class="cut-price">399</span>
+                        </li>
+                        <li class="cut d-flex justify-content-between align-items-center">
+                            <span>果酸</span>
+                            <span class="cut-price">499</span>
+                        </li>
+                        <li class="cut d-flex justify-content-between align-items-center">
+                            <span>SPA精油</span>
+                            <span class="cut-price spa-oil"> 599</span>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-5 col-md-12 order-lg-1 order-md-2 order-2">
+                    <h2 class="cut-shampoo-title ">洗+剪</h2>
+                    <ul class="shampoo-all">
+                        <li class="shampoo d-flex justify-content-between align-items-center">
+                            <span>精油</span>
+                            <span class="shampoo-price">330</span>
+                        </li>
+                        <li class="shampoo d-flex justify-content-between align-items-center">
+                            <span>舒活</span>
+                            <span class="shampoo-price">499</span>
+                        </li>
+                        <li class="shampoo d-flex justify-content-between align-items-center">
+                            <span>SPA</span>
+                            <span class="shampoo-price ">699</span>
+                        </li>
+                    </ul>
+                    <h2 class="conditioner-title">洗+護</h2>
+                    <ul class="shampoo-all">
+                        <li class="shampoo d-flex justify-content-between align-items-center">
+                            <span>天天精油洗護</span>
+                            <span class="shampoo-price">750</span>
+                        </li>
+                        <li class="shampoo d-flex justify-content-between align-items-center">
+                            <span>洋甘菊精油洗護</span>
+                            <span class="shampoo-price">950</span>
+                        </li>
+                        <li class="shampoo d-flex justify-content-between align-items-center">
+                            <span>日本酵素洗護</span>
+                            <span class="shampoo-price">1250</span>
+                        </li>
+                    </ul>
+                    <p class="price-ex">＊以上加100元即可搭配剪髮</p>
+                </div>
+                <div class="col-lg-7 col-md-12 order-lg-2 order-md-1 order-1">
+                    <img class="card-img-mid img-fluid" src="img/shampoo.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="row">
+                
+                    <div data-aos-delay="1000" class=" col-lg-7 col-12 ">
+                        <img class="img-fluid card-img-btm" src="img/treatment.jpg" alt="">
+                    </div>
+
+                    <div class=" treatment-right  col-lg-5 col-12 ">
+                        <h2 class="treatment-title treatment-right">頭皮養護套餐</h2>
+                        <p class="treatment-subtitle">頭皮深層去角質+剪髮</p>
+                        <p class="treatment-text or-price d-flex">原價1200 </p>
+                        <p class="treatment-text d-flex">優惠899</p>
+                        <p class="treatment-text price-ex add d-flex">送夏柚頭皮水</p>
+
+                        <p class="treatment-subtitle">頭皮精油SPA+剪髮</p>
+                        <p class="treatment-text or-price d-flex">原價1400</p>
+                        <p class="treatment-text d-flex">優惠999</p>
+                        <p class="treatment-text price-ex add d-flex">送夏柚洗髮精、角蛋白護髮或髮蠟</p>
+                        <p class="price-ex price-ex-btm d-flex">＊其他服務價格依個人髮況現場估定</p>
+                    </div>
+               
+
+            </div>
+
+
+        </div>
+        <!-- 立即預約:google api -->
+        <div class="container-map" id="container-map">
+            <div id="map"></div>
+            <div class="contact">
+                <h1 class="contact-title">立即預約</h1>
+                <p class="contact-text">
+                    <i class="fab fa-line"></i>misslovey
+                </p>
+                <p class="contact-text">
+                    <i class="fas fa-phone"></i>04-22235959
+                </p>
+                <p class="contact-text" style="letter-spacing:1px">
+                    <i class="fas fa-home"></i>台中市北區一中街39號2樓
+                </p>
+            </div>
+
+        </div>
+        <div class="container-fluid container-sitemap">
+            <ul class=sitemap-all>
+                <div class="sitemap-pc">
+                    <li class=sitemap>
+                        <a href="#container-about">關於我</a>
+                    </li>
+                    <li class=sitemap>
+                        <a href="#portfolio-title">髮型作品</a>
+                    </li>
+                    <li class=sitemap>
+                        <a href="#container-price">價目表</a>
+                    </li>
+                    <li class=sitemap>
+                        <a href="#container-map">立即預約</a>
+                    </li>
+                </div>
+                <div class="sitemap-phone">
+                    <li class=sitemap>關注我
+                        <a href="https://www.facebook.com/%E5%8F%B0%E4%B8%AD-%E4%B8%8A%E8%B6%8A-Ariel-%E6%84%9B%E9%BA%97%E5%85%92%E5%B0%88%E6%A5%AD%E7%87%99%E6%9F%93%E6%95%B4%E9%AB%94%E9%80%A0%E5%9E%8B-412152655840923/?hc_ref=ARRza7pwmYezbdhO5y9w74nG-wWNQeu64wXROp-lodJa9kV91jfkra8fDe7isg_G3B8">
+                            <i class="fab fa-facebook-f fa-sm"></i>
+                        </a>
+                        <a href="https://www.instagram.com/ariel.0718/?hl=zh-tw">
+                            <i class="fab fa-instagram fa-sm"></i>
+                        </a>
+                        </i>
+                    </li>
+                </div>
+                
+            </ul>
+        </div>
+        <footer>
+            <p>© Copyright All Rights Reserved.</p>
+        </footer>
+        <div id="back-to-top">
+            <img class="hvr-bob" style="height:140px;width:auto;" src="img/kitty-font.png" alt="">
+        </div>
+    </div>
+
+
+
+
+
+    <!-- bootstrap的js檔:共3個 -->
+
+    <!-- 下載jquery-以下載檔案方式 -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- swiper套件的js檔 -->
+    <script src="js/swiper.min.js"></script>
+    <!-- AOS套件:用CDN載入AOS套件的JS程式碼 -->
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <!-- 入口頁動畫套件 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
+    <!-- AOS初始化 -->
+    <script>
+        AOS.init();
+    </script>
+
+    <script>
+        // 歡迎進入網站
+            $(document).ready(() => {
+
+                let $wbtn = $('#welcomebtn');
+                let $fpage = $('#frontpage');
+                let $bpage = $('#backpage');
+                let $navbar = $('#navbar');
+                $bpage.hide();
+                $navbar.hide();
+
+
+                // spin wheelse
+                TweenMax.to('.wheel', 1, { rotation: "-=360", repeat: -1, ease: Power0.easeNone });
+
+                // bounce kitty
+                TweenMax.to('.kitty, .head', .1, { y: "-=4", repeat: -1, yoyo: true });
+
+                //drive in scooter
+                TweenMax.from('.puppet', 3, { x: "+=1000" });
+
+                //pop a wheelie
+                TweenMax.to('.puppet', .5, { delay: 3, rotation: "+=30", x: "-=200", ease: Power1.easeIn });
+                TweenMax.to('.head', 1, { delay: 2.8, rotation: "+=20", ease: Bounce.easeOut });
+
+                // speed up wheelse
+                TweenMax.to('.wheel', .3, { delay: 3.5, rotation: "-=360", repeat: -1, ease: Power0.easeNone });
+
+                //drive off
+                TweenMax.to('.puppet', 1, { delay: 4, x: "-=800", ease: Power2.easeIn });
+
+                setTimeout(function () { $fpage.hide();$bpage.show(); }, 5500);
+            })
+    </script>
+
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container-ini', {
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            // autoplay: {
+            //     delay: 3000,
+            // },
+            effect: 'fade',
+            loop: true
+
+        })
+    </script>
+    <!-- swiper的js -->
+    <script>
+        var swiper1 = new Swiper('.swiper-container1', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            slidesPerView: 3,
+            spaceBetween: 30,
+            freeMode: true,
+            breakpoints: {
+                992: {
+                    slidesPerView: 2,
+                    spaceBetween: 30
+                },
+                // when window width is <= 320px
+                768: {
+                    slidesPerView: 1,
+                    spaceBetween: 10
+                }
+            }
+
+        });
+    </script>
+    <script>
+        var swiper2 = new Swiper('.swiper-container2', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            slidesPerView: 3,
+            spaceBetween: 30,
+            freeMode: true,
+            breakpoints: {
+                992: {
+                    slidesPerView: 2,
+                    spaceBetween: 30
+                },
+                // when window width is <= 320px
+                768: {
+                    slidesPerView: 1,
+                    spaceBetween: 10
+                }
+            }
+
+
+        });
+    </script>
+    <script>
+        var swiper1 = new Swiper('.swiper-container3', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            slidesPerView: 3,
+            spaceBetween: 30,
+            freeMode: true,
+            breakpoints: {
+                992: {
+                    slidesPerView: 2,
+                    spaceBetween: 30
+                },
+                // when window width is <= 320px
+                768: {
+                    slidesPerView: 1,
+                    spaceBetween: 10
+                }
+            }
+        });
+    </script>
+    <script>
+        var swiper1 = new Swiper('.swiper-container4', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            slidesPerView: 3,
+            spaceBetween: 30,
+            freeMode: true,
+            breakpoints: {
+                992: {
+                    slidesPerView: 2,
+                    spaceBetween: 30
+                },
+                // when window width is <= 320px
+                768: {
+                    slidesPerView: 1,
+                    spaceBetween: 10
+                }
+            }
+
+        });
+    </script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container-modal-g-1', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            observer: true,
+            observeParents: true,
+            freeMode: true,
+            autoplay: {
+                delay: 3000,
+            }
+        });
+    </script>
+    <script>
+        var swiper = new Swiper('.swiper-container-modal-g-2', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            observer: true,
+            observeParents: true,
+            freeMode: true,
+            autoplay: {
+                delay: 3000,
+            }
+        });
+    </script>
+    <script>
+        var swiper = new Swiper('.swiper-container-modal-g-3', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            observer: true,
+            observeParents: true,
+            freeMode: true,
+            autoplay: {
+                delay: 3000,
+            }
+        });
+    </script>
+    <script>
+        var swiper = new Swiper('.swiper-container-modal-g-4', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            observer: true,
+            observeParents: true,
+            freeMode: true,
+            autoplay: {
+                delay: 3000,
+            }
+
+        });
+    </script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container-modal-g-5', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            observer: true,
+            observeParents: true,
+            freeMode: true,
+            autoplay: {
+                delay: 3000,
+            }
+        });
+    </script>
+    <script>
+        var swiper = new Swiper('.swiper-container-modal-g-6', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            observer: true,
+            observeParents: true,
+            freeMode: true,
+            autoplay: {
+                delay: 3000,
+            }
+        });
+    </script>
+
+
+    <script>
+        var swiper = new Swiper('.swiper-container-modal-g-7', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            observer: true,
+            observeParents: true,
+            freeMode: true,
+            autoplay: {
+                delay: 3000,
+            }
+        });
+    </script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container-modal-g-8', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            observer: true,
+            observeParents: true,
+            freeMode: true,
+            autoplay: {
+                delay: 3000,
+            }
+        });
+    </script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container-modal-g-9', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            observer: true,
+            observeParents: true,
+            freeMode: true,
+            autoplay: {
+                delay: 3000,
+            }
+        });
+    </script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container-modal-g-10', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            observer: true,
+            observeParents: true,
+            freeMode: true,
+            autoplay: {
+                delay: 3000,
+            }
+        });
+    </script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container-modal-g-11', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            observer: true,
+            observeParents: true,
+            freeMode: true,
+            autoplay: {
+                delay: 3000,
+            }
+        });
+    </script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container-modal-g-12', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            observer: true,
+            observeParents: true,
+            freeMode: true,
+            autoplay: {
+                delay: 3000,
+            }
+        });
+    </script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container-modal-m-1', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            observer: true,
+            observeParents: true,
+            freeMode: true,
+            autoplay: {
+                delay: 3000,
+            }
+        });
+    </script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container-modal-m-2', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            observer: true,
+            observeParents: true,
+            freeMode: true,
+            autoplay: {
+                delay: 3000,
+            }
+        });
+    </script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container-modal-m-3', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            observer: true,
+            observeParents: true,
+            freeMode: true,
+            autoplay: {
+                delay: 3000,
+            }
+        });
+    </script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container-modal-m-4', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            observer: true,
+            observeParents: true,
+            freeMode: true,
+            autoplay: {
+                delay: 3000,
+            }
+        });
+    </script>
+    <script>
+        var swiper = new Swiper('.swiper-container-modal-m-5', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            observer: true,
+            observeParents: true,
+            freeMode: true,
+            autoplay: {
+                delay: 3000,
+            }
+        });
+    </script>
+    <script>
+        var swiper = new Swiper('.swiper-container-modal-m-6', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            observer: true,
+            observeParents: true,
+            freeMode: true,
+            autoplay: {
+                delay: 3000,
+            }
+        });
+    </script>
+    <script>
+        var swiper = new Swiper('.swiper-container-modal-m-7', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            observer: true,
+            observeParents: true,
+            freeMode: true,
+            autoplay: {
+                delay: 3000,
+            }
+        });
+    </script>
+    <script>
+        var swiper = new Swiper('.swiper-container-modal-m-8', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            observer: true,
+            observeParents: true,
+            freeMode: true,
+            autoplay: {
+                delay: 3000,
+            }
+        });
+    </script>
+    <script>
+        var swiper = new Swiper('.swiper-container-modal-m-9', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            observer: true,
+            observeParents: true,
+            freeMode: true,
+            autoplay: {
+                delay: 3000,
+            }
+        });
+    </script>
+
+    <!--  地圖的初始化js -->
+    <script>
+        function initMap() {
+            var uluru = { lat: 24.148577, lng: 120.684563 };
+            var map_center = { lat: 24.148713, lng: 120.685891 };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 18,
+                center: map_center,
+                styles:
+                    [
+                        {
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#ebe3cd"
+                                }
+                            ]
+                        },
+                        {
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                                {
+                                    "color": "#523735"
+                                }
+                            ]
+                        },
+                        {
+                            "elementType": "labels.text.stroke",
+                            "stylers": [
+                                {
+                                    "color": "#f5f1e6"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "administrative",
+                            "elementType": "geometry.stroke",
+                            "stylers": [
+                                {
+                                    "color": "#c9b2a6"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "administrative.land_parcel",
+                            "elementType": "geometry.stroke",
+                            "stylers": [
+                                {
+                                    "color": "#dcd2be"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "administrative.land_parcel",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                                {
+                                    "color": "#ae9e90"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "landscape.natural",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#dfd2ae"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "poi",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#dfd2ae"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "poi",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                                {
+                                    "color": "#93817c"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "poi.park",
+                            "elementType": "geometry.fill",
+                            "stylers": [
+                                {
+                                    "color": "#a5b076"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "poi.park",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                                {
+                                    "color": "#447530"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#f5f1e6"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road.arterial",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#fdfcf8"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road.highway",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#f8c967"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road.highway",
+                            "elementType": "geometry.stroke",
+                            "stylers": [
+                                {
+                                    "color": "#e9bc62"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road.highway.controlled_access",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#e98d58"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road.highway.controlled_access",
+                            "elementType": "geometry.stroke",
+                            "stylers": [
+                                {
+                                    "color": "#db8555"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "road.local",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                                {
+                                    "color": "#806b63"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "transit.line",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#dfd2ae"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "transit.line",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                                {
+                                    "color": "#8f7d77"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "transit.line",
+                            "elementType": "labels.text.stroke",
+                            "stylers": [
+                                {
+                                    "color": "#ebe3cd"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "transit.station",
+                            "elementType": "geometry",
+                            "stylers": [
+                                {
+                                    "color": "#dfd2ae"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "water",
+                            "elementType": "geometry.fill",
+                            "stylers": [
+                                {
+                                    "color": "#b9d3c2"
+                                }
+                            ]
+                        },
+                        {
+                            "featureType": "water",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                                {
+                                    "color": "#92998d"
+                                }
+                            ]
+                        }
+                    ]
+            });
+            var contentString = '<div id="content">' +
+                '<div id="siteNotice">' +
+                '</div>' +
+                '<h4 id="firstHeading" class="firstHeading">上越國際髮型-台中旗艦店</h4>' +
+                '</div>';
+
+            var infowindow = new google.maps.InfoWindow({
+                content: contentString
+            });
+
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+            marker.addListener('mouseout', function () {
+                infowindow.open(map, marker);
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFiJK0cxUJyTpfqzMef77lGMG98N_jPCM&callback=initMap">
+    </script>
+
+  
+
+
+    <script>
+        // Hide Header on on scroll down
+        var didScroll;
+        var lastScrollTop = 0;
+        var delta = 5;
+        var navbarHeight = $('.navbar').outerHeight();
+
+        $(window).scroll(function (event) {
+            didScroll = true;
+        });
+
+        setInterval(function () {
+            if (didScroll) {
+                hasScrolled();
+                didScroll = false;
+            }
+        }, 250);
+
+        function hasScrolled() {
+            var st = $(this).scrollTop();
+
+            // Make sure they scroll more than delta
+            if (Math.abs(lastScrollTop - st) <= delta)
+                return;
+
+            // If they scrolled down and are past the navbar, add class .nav-up.
+            // This is necessary so you never see what is "behind" the navbar.
+            if (st > lastScrollTop && st > navbarHeight) {
+                // Scroll Down
+                $('.navbar').removeClass('nav-down').addClass('nav-up');
+            } else {
+                // Scroll Up
+                if (st + $(window).height() < $(document).height()) {
+                    $('.navbar').removeClass('nav-up').addClass('nav-down');
+                }
+            }
+
+            lastScrollTop = st;
+        }
+    </script>
+    <!-- navbar下滑時才會出現 -->
+
+    <!-- <script>
+        $(window).scroll(function () {
+            var offsetTop = $(window).scrollTop();
+            if (offsetTop >= 76) {
+                $(".fixed-top").addClass("sticky");
+            } else {
+                $(".fixed-top").removeClass("sticky");
+            }
+        });
+    </script> -->
+
+    <!-- 作品頁按鈕的分頁效果 -->
+    <script>
+        $(".btn-g").click(function () {
+            $(this).addClass("active");
+            $(".btn-m").removeClass("active");
+        });
+        $(".btn-m").click(function () {
+            $(this).addClass("active");
+            $(".btn-g").removeClass("active");
+        });
+    </script>
+    <!-- 作品頁分頁效果 -->
+    <script>
+        $(document).ready(() => {
+            const $button1 = $('#button1');
+            const $button2 = $('#button2');
+            let $swiper1 = $('#swiper-container1');
+            let $swiper2 = $('#swiper-container2');
+            let $swiper3 = $('#swiper-container3');
+            let $swiper4 = $('#swiper-container4');
+            $swiper3.hide();
+            $swiper4.hide();
+
+            $button1.on('click', () => {
+                $swiper1.show();
+                $swiper2.show();
+                $swiper3.hide();
+                $swiper4.hide();
+            })
+
+            $button2.on('click', () => {
+                $swiper3.show();
+                $swiper4.show();
+                $swiper1.hide();
+                $swiper2.hide();
+            })
+        })
+
+
+
+    </script>
+
+    <!-- TOTOP慢慢滑上去的效果 -->
+    <script>
+        if ($('#back-to-top').length) {
+            var scrollTrigger = 100, // px
+                backToTop = function () {
+                    var scrollTop = $(window).scrollTop();
+                    if (scrollTop > scrollTrigger) {
+                        $('#back-to-top').addClass('show');
+                    } else {
+                        $('#back-to-top').removeClass('show');
+                    }
+                };
+            backToTop();
+            $(window).on('scroll', function () {
+                backToTop();
+            });
+            $('#back-to-top').on('click', function (e) {
+                e.preventDefault();
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 700);
+            });
+        }
+
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('a[href^="#"]').on('click', function (e) {
+                e.preventDefault();
+
+                var target = this.hash;
+                var $target = $(target);
+
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top
+                }, 900, 'swing', function () {
+                    window.location.hash = target;
+                });
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            let $bpage = $('#backpage');
+            $bpage.hide();
+
+
+
+        });
+    </script>
+
+</body>
+
+</html>

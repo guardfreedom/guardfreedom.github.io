@@ -1,9 +1,80 @@
 
-@import url(https://fonts.googleapis.com/earlyaccess/cwtexming.css);
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
 * {
-    font-family: "Cambria","微軟正黑體", "Microsoft JhengHei", "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro",  "標楷體", DFKai-SB, sans-serif;
+    font-family: "Cambria",'Noto Sans TC', sans-serif;
     box-sizing: border-box;
+    font-weight: 300;
 }
+
+/* 入口頁動畫 */
+    .enter{
+        position: absolute;
+        width: 100%;
+        height:100vh;
+        z-index: 9999999;
+        background-color: white;
+        top:0;
+        left:0;
+    }
+    .puppet {
+        list-style: none;
+        position: relative;
+        width: 300px;
+        height: 300px;
+        top: 50px;
+        left: 600px;
+    }
+
+    .puppet li {
+        position: absolute;
+        /*   outline:1px solid red; */
+    }
+
+    /* position all the separate pieces */
+
+    .scooter {
+        bottom: 0;
+        left: 0;
+    }
+
+    .kitty {
+        top: 65px;
+        left: 130px;
+    }
+
+    .head {
+        top: 0;
+        left: 80px;
+    }
+
+    .front {
+        bottom: 12px;
+        left: 8px;
+    }
+
+    .back {
+        bottom: 8px;
+        right: 30px;
+    }
+
+    /* adjust "anchor points" where needed SEE:https://css-tricks.com/almanac/properties/t/transform-origin/*/
+
+    .head {
+        transform-origin: 120px 110px
+    }
+
+    .puppet {
+        transform-origin: 240px 280px
+    }
+
+
+    /* ground just for fun */
+
+    .enter footer {
+        height: 200px;
+        background-color: pink;
+        margin-top: 30px;
+    }
 
 
 /* navbar:boostrap套件 */
@@ -26,27 +97,24 @@
     
 }
 .nav-item {
-    font-family:微軟正黑體;
     font-size: 22px;  
-    line-height: 30px; 
-    font-weight:bolder;
-
+    line-height: 30px;    
 }
 
 .nav-link.eg{
     font-size: 18px;
     padding: 0px;
-    letter-spacing: 8px;
+    letter-spacing:4px;
     text-align: center;
     line-height: 20px;
-    font-family: cambria;
-   
+    font-weight:800;   
 }
 .nav-link {
     box-sizing: border-box;
     padding: 0px;
     position: relative;
     text-align: center;
+    font-weight: 500;
   
 }
 .nav-link.eg::after {
@@ -126,6 +194,7 @@ h1 {
     letter-spacing: 12px;
     margin-bottom: 80px;
     font-weight:bold;
+    
 }
 
 /* 關於我的兩個次標題 */
@@ -152,6 +221,14 @@ h3 {
     line-height: 60px;
     letter-spacing: 12px;
     margin-bottom: 0px;
+}
+h3::before {/*偽元素是兩個冒號，一定要先寫content*/
+    content:"" ;
+    border: solid 1px black;/*在文字右方加線*/
+    width: 35px;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-right: 20px;
 }
 
 /* 關於我裡的左右兩欄 */
@@ -349,7 +426,7 @@ body {
 .intro {
     font-size: 18px;
     letter-spacing: 8px;
-    padding-left: 4px;
+   
     
 }
 /* 價目表 */
@@ -361,12 +438,14 @@ body {
     margin-bottom: 70px;
 }
 .price-ex {
-    font-size: 14px;
-    letter-spacing: 10px;
+    font-size: 16px;
+    letter-spacing: 8px;
+    padding-top: 15px;
     margin-bottom: 0;
 }
 .price-ex-btm{
     line-height: 60px;
+    padding-top: 0;
 }
 .cut-title,.shampoo-title{
     margin-left:20px;
@@ -390,7 +469,7 @@ body {
     padding:0;
 }
 .card-img-btm {
-    padding-top: 130px;
+    padding-top: 136px;
 }
 .treatment-right {
     padding-left: 50px;
@@ -399,7 +478,15 @@ body {
     letter-spacing: 10px;
     padding: 30px;
     padding-left: 0;
-    
+    padding-top: 40px;
+}
+.treatment-subtitle {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 10px;
+    padding-top: 10px;
+    line-height: 35px;
+
 }
 .treatment-text {
     font-size: 24px;
@@ -421,6 +508,7 @@ body {
 }
 .card-img-mid {
     padding-top: 120px;
+    /* height: 680px; */
 }
 
 /* 立即預約 */
@@ -489,7 +577,7 @@ body {
     line-height: 18px;
     font-size: 18px;
 }
-.container-sitemap .sitemap-all .sitemap:nth-child(5) {
+.container-sitemap .sitemap-all .sitemap-phone .sitemap {
     border-right:none;
 }
 .sitemap-all li a {
@@ -497,9 +585,14 @@ body {
     text-decoration: none;
 
 }
+.sitemap-pc {
+    display: inline-block;
+}
+.sitemap-phone {
+    display: inline-block;
+}
 a:hover {
     font-size:20px;
-
     text-decoration: underline;
 }
 
@@ -509,18 +602,61 @@ footer {
     text-align: center;
 }
 #back-to-top {
-    width: 60px;
-    height: auto;
     position: fixed;
     bottom: 50px;
     z-index: 999;
-    right: 60px;
+    right: 16px;
     opacity: 0;
     cursor: pointer;
 }
 #back-to-top.show{
-    opacity: 0.8;
+    opacity: 1;
 }
-#back-to-top.show:hover {
-    opacity: 0.5;
+
+@media screen and (max-width:780px){
+    .bg-img,.bg-img-m{
+        height:600px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+    .info ul li {
+        font-size: 16px;
+        letter-spacing: 5px;
+}
+
+
+@media screen and (max-width:650px){
+    .sitemap-pc {
+        width: 100%;
+    }
+    .sitemap-phone {
+        width: 100%;
+    }
+    .sitemap {
+        margin-top:30px ;
+    }
+    .info ul li:nth-child(1) {
+        padding-left: 29px;
+        letter-spacing: 8px;
+    }
+    .info {
+        height: 50px;
+        text-align: center;       
+}
+.info ul li {
+    display: block;
+    font-size: 16px;
+    line-height: 25px;
+}
+}
+@media screen and (max-width:500px){
+    .sitemap {
+       width: 100%;
+        border-right:none;  
+    }
+    .container-sitemap {
+        height: 280px;   
+    }
+
 }
