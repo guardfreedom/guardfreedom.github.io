@@ -64,11 +64,11 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item ">
-                            <a class="nav-link " href="#container-about">關於我
-                                <span class="sr-only">(current)</span>
+                            <a class="nav-link hvr-shrink " href="#container-about">關於我
+                                <!-- <span class="sr-only">(current)</span> -->
                             </a>
                             <a class="nav-link eg " href="#container-about">About
-                                <span class="sr-only">(current)</span>
+                                <!-- <span class="sr-only">(current)</span> -->
                             </a>
                         </li>
                         <li class="nav-item">
@@ -154,10 +154,10 @@
                         </p>
                         <h2 class="card-title">重要經歷</h2>
                         <ul>
-                            <li class="experience">米蘭造型剪髮課程</li>
-                            <li class="experience">米蘭創意燙髮課程</li>
-                            <li class="experience">弘光頭皮養護師SPA課程</li>
-                            <li class="experience italy">義大利LTALT外國師資染髮研習班</li>
+                            <li>米蘭造型剪髮課程</li>
+                            <li>米蘭創意燙髮課程</li>
+                            <li>弘光頭皮養護師SPA課程</li>
+                            <li style="letter-spacing: 8px;">義大利LTALT外國師資染髮研習班</li>
                         </ul>
                     </div>
                 </div>
@@ -298,7 +298,7 @@
                                     <div class="swiper-container swiper-container-modal-g-1">
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
-                                                <img  src="img/1/00-5.jpg" alt="">
+                                                <img src="img/1/00-5.jpg" alt="">
                                             </div>
                                             <div class="swiper-slide">
                                                 <img src="img/1/00-4.jpg" alt="">
@@ -780,7 +780,7 @@
                                     <h3>髮型說明</h3>
                                     <p class="intro">
                                         炎炎的夏季來臨，讓皮膚看起來有提亮的效果！室內淡淡的顏色室外暖暖的咖啡帶紅顏色，想要染髮卻怕髮色太亮的女孩們可以嘗試看看唷！
-                                       
+
                                     </p>
                                 </div>
                             </div>
@@ -1588,7 +1588,7 @@
                     <img class="card-img-top img-fluid" src="img/cut.jpg" alt="Card image cap">
 
                 </div>
-                <div  class="col-lg-5 col-md-12 col-sm-12 col-12 ">
+                <div class="col-lg-5 col-md-12 col-sm-12 col-12 ">
 
                     <h2 class="cut-title">剪髮</h2>
                     <ul>
@@ -1659,25 +1659,25 @@
             </div>
 
             <div class="row">
-                
-                    <div data-aos-delay="1000" class=" col-lg-7 col-12 ">
-                        <img class="img-fluid card-img-btm" src="img/treatment.jpg" alt="">
-                    </div>
 
-                    <div class=" treatment-right  col-lg-5 col-12 ">
-                        <h2 class="treatment-title treatment-right">頭皮養護套餐</h2>
-                        <p class="treatment-subtitle">頭皮深層去角質+剪髮</p>
-                        <p class="treatment-text or-price d-flex">原價1200 </p>
-                        <p class="treatment-text d-flex">優惠899</p>
-                        <p class="treatment-text price-ex add d-flex">送夏柚頭皮水</p>
+                <div data-aos-delay="1000" class=" col-lg-7 col-12 ">
+                    <img class="img-fluid card-img-btm" src="img/treatment.jpg" alt="">
+                </div>
 
-                        <p class="treatment-subtitle">頭皮精油SPA+剪髮</p>
-                        <p class="treatment-text or-price d-flex">原價1400</p>
-                        <p class="treatment-text d-flex">優惠999</p>
-                        <p class="treatment-text price-ex add d-flex">送夏柚洗髮精、角蛋白護髮或髮蠟</p>
-                        <p class="price-ex price-ex-btm d-flex">＊其他服務價格依個人髮況現場估定</p>
-                    </div>
-               
+                <div class=" treatment-right  col-lg-5 col-12 ">
+                    <h2 class="treatment-title treatment-right">頭皮養護套餐</h2>
+                    <p class="treatment-subtitle">頭皮深層去角質+剪髮</p>
+                    <p class="treatment-text or-price d-flex">原價1200 </p>
+                    <p class="treatment-text d-flex">優惠899</p>
+                    <p class="treatment-text price-ex add d-flex">送夏柚頭皮水</p>
+
+                    <p class="treatment-subtitle">頭皮精油SPA+剪髮</p>
+                    <p class="treatment-text or-price d-flex">原價1400</p>
+                    <p class="treatment-text d-flex">優惠999</p>
+                    <p class="treatment-text price-ex add d-flex">送夏柚洗髮精、角蛋白護髮或髮蠟</p>
+                    <p class="price-ex price-ex-btm d-flex">＊其他服務價格依個人髮況現場估定</p>
+                </div>
+
 
             </div>
 
@@ -1727,7 +1727,7 @@
                         </i>
                     </li>
                 </div>
-                
+
             </ul>
         </div>
         <footer>
@@ -1763,16 +1763,20 @@
 
     <script>
         // 歡迎進入網站
-            $(document).ready(() => {
+        $(document).ready(() => {
 
-                let $wbtn = $('#welcomebtn');
-                let $fpage = $('#frontpage');
-                let $bpage = $('#backpage');
-                let $navbar = $('#navbar');
-                $bpage.hide();
-                $navbar.hide();
+            let $wbtn = $('#welcomebtn');
+            let $fpage = $('#frontpage');
+            let $bpage = $('#backpage');
+            let $navbar = $('#navbar');
+            $bpage.hide();
+            $navbar.hide();
 
 
+            $("#frontpage").innerWidth = screen.width;
+            // console.log(screen.width)
+            if (screen.width >= 1200) {
+                
                 // spin wheelse
                 TweenMax.to('.wheel', 1, { rotation: "-=360", repeat: -1, ease: Power0.easeNone });
 
@@ -1792,8 +1796,21 @@
                 //drive off
                 TweenMax.to('.puppet', 1, { delay: 4, x: "-=800", ease: Power2.easeIn });
 
-                setTimeout(function () { $fpage.hide();$bpage.show();initMap() }, 5500);
-            })
+                setTimeout(function () { $fpage.hide(); $bpage.show(); }, 5500);
+
+            }
+            else {
+                $("#backpage").css("display", "block");
+                $("#frontpage").css("display","none");
+                
+                // setTimeout(function () { $fpage.hide(); $bpage.show(); }, 0);
+                // $($fpage).hide(); 
+                // $($bpage).show();
+                // console.log($fpage)
+                
+            }
+
+        })
     </script>
 
 
@@ -2543,7 +2560,7 @@
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFiJK0cxUJyTpfqzMef77lGMG98N_jPCM&callback=initMap">
     </script>
 
-  
+
 
 
     <script>
@@ -2684,7 +2701,7 @@
         });
     </script>
 
-    <script>
+    <!-- <script>
         $(document).ready(function () {
             let $bpage = $('#backpage');
             $bpage.hide();
@@ -2692,7 +2709,7 @@
 
 
         });
-    </script>
+    </script> -->
 
 </body>
 
